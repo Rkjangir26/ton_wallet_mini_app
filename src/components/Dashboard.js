@@ -45,7 +45,7 @@ const DashboardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     .profit-container {
       display: flex;
@@ -70,11 +70,11 @@ const DashboardContainer = styled.div`
   }
 
   .new-today {
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     overflow-x: auto;
-    gap: 15px;
-    padding-bottom: 10px;
+    gap: 1px;
+    padding-bottom: 5px;
 
     .card {
       background: #fff;

@@ -7,7 +7,7 @@ import friend_pic from "../assets/images/friends-icon.png";
 import earn_pic from "../assets/images/earn-icon.png.png";
 
 const FooterContainer = styled.div`
-  margin-top: auto;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-around;
