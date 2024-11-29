@@ -11,7 +11,7 @@ const App = () => {
       if (window.TONConnectUI) {
         console.log('TONConnectUI is loaded!');
         const instance = new window.TONConnectUI.TonConnectUI({
-          manifestUrl: 'https://<YOUR_APP_URL>/tonconnect-manifest.json', // Replace with your actual manifest URL
+          manifestUrl: 'https://https://ton-wallet-mini-app.vercel.app//tonconnect-manifest.json', // Replace with your actual manifest URL
           buttonRootId: 'ton-connect', // The ID where the button will be rendered
         });
         setTonConnectUI(instance);
