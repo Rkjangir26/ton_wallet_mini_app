@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ton_wallet_mini_app/static/css/main.5527efcc.css",
-    "main.js": "/ton_wallet_mini_app/static/js/main.9665fd5a.js",
+    "main.js": "/ton_wallet_mini_app/static/js/main.d5f00cdb.js",
     "index.html": "/ton_wallet_mini_app/index.html",
     "main.5527efcc.css.map": "/ton_wallet_mini_app/static/css/main.5527efcc.css.map",
-    "main.9665fd5a.js.map": "/ton_wallet_mini_app/static/js/main.9665fd5a.js.map"
+    "main.d5f00cdb.js.map": "/ton_wallet_mini_app/static/js/main.d5f00cdb.js.map"
   },
   "entrypoints": [
     "static/css/main.5527efcc.css",
-    "static/js/main.9665fd5a.js"
+    "static/js/main.d5f00cdb.js"
   ]
 }
