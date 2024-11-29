@@ -1,0 +1,130 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* App Wrapper */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2d88ff;
+    color: #fff;
+  }
+  
+  header span {
+    font-size: 1.5rem;
+  }
+  
+  header button {
+    background-color: #fff;
+    color: #2d88ff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Main Section */
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2rem;
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Button */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d88ff;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background-color: #1a62b4;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header span {
+      font-size: 1.2rem;
+    }
+  
+    main h1 {
+      font-size: 1.5rem;
+    }
+  
+    main p {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 12px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header span {
+      margin-bottom: 10px;
+    }
+  
+    main h1 {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+  
