@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    h1, h2 {
+      font-size: 18px;
+    }
+  
+    button {
+      padding: 8px 12px;
+    }
+  }
+  

@@ -1,22 +1,30 @@
-import React from "react";
+//<TonConnectUIProvider manifestUrl="https://Rkjangir26.github.io/ton_wallet_mini_app/tonconnect-manifest.json"></TonConnectUIProvider>
+
+import React, { useState, useEffect } from "react";
+import { SplashScreen } from "./components/SplashScreen";
+import { LoadingScreen } from "./components/LoadingScreen";
+import { Dashboard } from "./components/Dashboard";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
-import Header from "./components/Header";
 
-import Wallet from "./components/Wallet";
-import ModalControl from "./components/ModalControl";
+const App = () => {
+  const [screen, setScreen] = useState("splash");
 
-function App() {
+  useEffect(() => {
+    const timer1 = setTimeout(() => setScreen("loading"), 3000); // 3 seconds splash
+    const timer2 = setTimeout(() => setScreen("dashboard"), 6000); // 3 seconds loading
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, []);
+
   return (
     <TonConnectUIProvider manifestUrl="https://Rkjangir26.github.io/ton_wallet_mini_app/tonconnect-manifest.json">
-      <Header />
-      <main style={{ padding: "1rem" }}>
-        <h1>Ton Wallet Integration</h1>
-        
-        <Wallet />
-        <ModalControl />
-      </main>
+      {screen === "splash" && <SplashScreen />}
+      {screen === "loading" && <LoadingScreen />}
+      {screen === "dashboard" && <Dashboard />}
     </TonConnectUIProvider>
   );
-}
+};
 
 export default App;
